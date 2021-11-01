@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<title>움직이는 글자</title>
+<style>
+    @keyframes movingB {
+        0% {
+            font-size: 10%;
+            left: 0%;
+        }
+
+        100% {
+            font-size: 500%;
+            left: 50%;
+
+        }
+    }
+
+    @keyframes movingR {
+        0% {
+            font-size: 10%;
+            margin-top: 0%;
+        }
+
+        100% {
+            font-size: 500%;
+            margin-top: 50%;
+        }
+    }
+
+    @keyframes movingBlue {
+        0% {
+            font-size: 10%;
+            bottom: 0%;
+        }
+
+        100% {
+            font-size: 500%;
+            bottom: 50%;
+        }
+    }
+    
+    @keyframes movingG {
+        0% {
+            font-size: 10%;
+            right: 0%;
+        }
+        
+        100% {
+            font-size: 500%;
+            right: 50%;
+        }
+    }
+
+    .black {
+        animation-name: movingB;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+
+    .red {
+        animation-name: movingR;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+
+    .blue {
+        animation-name: movingBlue;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+
+    .green {
+        animation-name: movingG;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+
+    div:hover {
+        transform: rotate(180deg);
+        transition: 1s;
+    }
+
+    #blackblock {
+        border-radius: 60px;
+        background: black;
+        max-width: 100%;
+        height: auto;
+        color: white;
+        text-align: center;
+        font-weight: bolder;
+        position: absolute;
+        float: left;
+        padding: 5px;
+
+    }
+
+    #redblock {
+        border-radius: 60px;
+        background: red;
+        color: white;
+        text-align: center;
+        font-weight: bolder;
+        position: relative;
+        float: right;
+        max-width: 100%;
+        height: auto;
+        padding: 5px;
+    }
+
+
+
+    #blueblock {
+        border-radius: 60px;
+        max-width: 100%;
+        height: auto;
+        background: blue;
+        color: white;
+        text-align: center;
+        font-weight: bolder;
+        position: relative;
+        bottom: 0;
+        float: left;
+        padding: 5px;
+
+    }
+
+    #greenblock {
+        display: inline;
+        border-radius: 60px;
+        max-width: 100%;
+        height: auto;
+        background: green;
+        font-weight: bolder;
+        color: white;
+        text-align: center;
+        position: absolute;
+        float: right;
+        margin-top: 100%;
+        padding: 5px;
+    }
+</style>
+
+<body>
+    <div class="red" id="redblock">HTML5</div>
+    <div class="black" id="blackblock">WWW</div>
+    <div class="green" id="greenblock">CSS3</div>
+    <div class="blue" id="blueblock">JavaScript</div>
+</body>
+
+</html>

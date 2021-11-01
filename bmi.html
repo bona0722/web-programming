@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>비만도 판정</title>
+    <style>
+        .borderF{
+            font-weight: bolder;
+        }
+    </style>
+</head>
+
+<body>
+    <table border="1">
+        <script>
+            var name = prompt("이름을 입력하세요...");
+            var height = prompt(name + "님의 키를 입력하세요...");
+            var weight = prompt(name + "님의 몸무게를 입력하세요...");
+
+            var bmi = weight / ((height * 0.01) ** 2);
+            bmi = bmi.toFixed(1);
+
+            if (bmi < 18.5)
+                title = "<span style=\"color:blue;font-size: 30pt;\">저체중</span>";
+            else if (bmi < 25)
+                title = "<span style=\"font-size: 30pt;\">정상</span>";
+            else if (bmi < 30)
+                title = "<span style=\"color:orange;font-size: 30pt;\">과체중</span>";
+            else {
+                title = "<span style=\"color:red;font-size: 30pt;\">비만</span>";
+            }
+
+            document.write("<tr><td><span class=\"borderF\" >이름</span></td><td>" + name + "</td></tr>");
+            document.write("<tr><td><span class=\"borderF\">키</span></td><td>" + height + "</td></tr>");
+            document.write("<tr><td><span class=\"borderF\">몸무게</span></td><td>" + weight + "</td></tr>");
+            document.write("<tr><td><span class=\"borderF\">BMI</span></td><td>" + bmi + "</td></tr>");
+            document.write("<tr><td><span class=\"borderF\">비만도</span></td><td>" + title + "</td></tr>");
+        </script>
+    </table>
+</body>
+
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>중간고사 1번</title>
+    <style>
+        div {
+            border-color: blue
+        }
+
+        table {
+            width: 640px;
+            border-color: blue;
+        }
+
+        thead {
+            font-size: 15pt;
+            font-weight: bolder;
+            border-color: red;
+        }
+
+        tbody.tbY {
+            background-color: yellow;
+            text-align: center;
+            border-color: red;
+
+        }
+
+        tr {
+            text-align: center;
+        }
+
+        td:hover {
+            background-color: skyblue;
+        }
+
+        img {
+            border-radius: 10px;
+        }
+
+        img:hover {
+            transform: rotate(15deg) scale(1.5);
+            box-shadow: 10px 10px 5px gray;
+
+        }
+
+        p {
+            border-radius: 10px;
+        }
+
+        p:hover {
+            transform: rotate(15deg) scale(1.5);
+            box-shadow: 10px 10px 5px gray;
+
+        }
+    </style>
+
+<body>
+    <table border="1">
+        <thead>
+
+            <tr>
+                <td colspan="4">아트 링크</td>
+            </tr>
+        </thead>
+        <tbody class="tbY">
+            <tr>
+                <td>
+                    <img src="media/starry night.jpg" width="100px" height="80px"><br>
+                    <a href="media/starry night.jpg" target="starry">
+                        <p>별이 빛나는 밤</p>
+                    </a>
+                </td>
+                <td>
+                    <img src="media/waterlilies.jpg" width="100px" height="80px"><br>
+                    <a href="media/waterlilies.jpg" target="waterlilies">
+                        <p>수련</p>
+                    </a>
+                </td>
+                <td>
+                    <img src="media/minari.jpg" width="100px" height="150px"><br>
+                    <a href="https://www.youtube.com/embed/TMwaYs4H7yI" target="minari">
+                        <p>미나리</p>
+                    </a>
+                </td>
+                <td>
+                    <img src="media/hufs logo.jpg" width="100px" height="80px"><br>
+                    <a href="https://www.hufs.ac.kr/" target="hufs">
+                        <p>한국외국어대학교</p>
+                    </a>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <br>
+    <iframe name="starry" name="minari" name="hufs" width="640px" height="480px"></iframe>
+
+</body>
+
+</head>

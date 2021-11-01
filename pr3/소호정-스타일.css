@@ -1,0 +1,20 @@
+body { background-color : linen;
+    background-image : url("media/email-pattern.png");
+    background-position : center center;
+    background-size : 400px 400px;
+    background-repeat : repeat;
+}
+h2 {color : rgb(152, 87, 199); font-family: DotumChe;}
+p::first-letter{color: red;} 
+img.boxblur{
+    outline: 4px groove rgb(184, 169, 162);
+    box-shadow: 10px 10px 10px rgb(189, 178, 166);
+}
+thead.thY{background-color: yellow;}
+td.tdY{background-color:yellow;}
+td.soft{background-color:rgb(130, 188, 255);}
+td.web{background-color:rgb(207, 187, 255);}
+td.db{background-color:rgb(202, 139, 221);}
+td.law{background-color:rgb(172, 243, 255);}
+td.job{background-color:rgb(255, 204, 252);}
+td.economy{background-color:rgb(115, 124, 255);}

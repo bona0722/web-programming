@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+<html>
+<style>
+    .red {
+        background-color: pink;
+    }
+
+    #clock {
+        border-color: black;
+        background-color: aqua;
+        color: red;
+        font-size: 25pt;
+    }
+    #clock:hover{
+        background-color: yellow;
+    }
+    #check:hover{
+        transform: scale(3);
+    }
+    form {
+        width: fit-content;
+    }
+</style>
+
+<head>
+    <meta charset="UTF-8">
+    <title>중간고사2번</title>
+</head>
+
+<body>
+    <form>
+        <fieldset>
+            <legend>알람 설정</legend>
+            <br>
+            <p><input type="time" value="06:00" id=clock></p>
+            <br>
+            &nbsp;<label for= "option1"><input id="check" type="checkbox" value="1"></label>
+            &nbsp;<label><input id="check" type="checkbox" id="option2" value="2"></label>
+            &nbsp;<label><input id="check" type="checkbox" id="option3" value="3"></label>
+            &nbsp;<label><input id="check" type="checkbox" id="option4" value="4"></label>
+            &nbsp;<label><input id="check" type="checkbox" id="option5" value="5"></label>
+            &nbsp;<label><input id="check" type="checkbox" id="option6" value="6"></label>
+            &nbsp;<label><input id="check" type="checkbox" id="option7" value="7"></label>
+            <br>
+            <label id="option1" value="1">일</label>
+            <label id="option2" value="2"> &nbsp;&nbsp;월</label>
+            <label id="option3" value="3"> &nbsp;&nbsp;화</label>
+            <label id="option4" value="4"> &nbsp;&nbsp;수</label>
+            <label for="option5" value="5"> &nbsp;&nbsp;목</label>
+            <label for="option6" value="6"> &nbsp;&nbsp;금</label>
+            <label for="option7" value="7"> &nbsp;&nbsp;토</label>
+            <br>
+            <p> <label for=reservedNum>알람 사운드 </label>
+                <select name="reservedNum" id="reservedNum">
+                    <option value="two" selected>Bell</option>
+                    <option value="three">Ding Dong</option>
+                    <option value="four">Beep</option>
+                </select>
+            </p>
+            <p>음량 0
+                <input type="range" min="0" max="15" list="sound">
+                <datalist id="sound">
+
+                </datalist>
+                15
+            </p>
+
+        </fieldset>
+
+
+        <br>
+        <input class="red" type="submit" value="초기화">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="submit" value="등록">
+        <input type="submit" value="취소">
+    </form>
+</body>
+
+</html>
