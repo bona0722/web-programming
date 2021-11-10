@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>윤동주 시집</title>
+
+  <style>
+    div {
+      background-color: yellow;
+      border-radius: 20px;
+      text-align: center;
+      display: inline-block;
+      padding-top: 20px;
+      width: 200px;
+      height: 70px;
+      font-size: 15pt;
+    }
+  </style>
+</head>
+
+<body>
+  <script>
+    var count1 = 0;
+    var count2 = 0;
+    var count3 = 0;
+
+    function poem1(id) {
+      count1 += 1;
+      p1Title = "<span style=\"font-weight: bolder; font-size: 15pt;\">서시, 윤동주 <br></span>"
+      p1 = "<br> 죽는 날까지 하늘을 우러러 <br> \
+      한 점 부끄럼이 없기를, <br> \
+      잎새에 이는 바람에도 <br> \
+      나는 괴로워했다. <br> \
+      별을 노래하는 마음으로 <br> \
+      모든 죽어가는 것을 사랑해야지. <br> \
+      그리고 나한테 주어진 길을 <br> \
+      걸어가야겠다."
+
+      if (count1 % 2 == 1) {
+        document.getElementById(id).style.backgroundColor = "aqua";
+        document.getElementById("text1").innerHTML = p1Title + p1;
+
+      } else {
+        document.getElementById(id).style.backgroundColor = "yellow";
+        document.getElementById("text1").innerHTML = "";
+      }
+
+
+    }
+
+    target.removeEventListener("click", poem1, false);
+
+    function poem2(id) {
+      count2 += 1;
+      var p2Title = "<span style=\"font-weight: bolder; font-size: 15pt;\">쉽게 쓰여진 시, 윤동주 <br></span>"
+      var p2 = "<br> 인생은 살기 어렵다는데 <br> \
+      시가 이렇게 쉽게 씌어지는 것은 <br> \
+      부끄러운 일이다 <br> \
+      육첩방은 남의 나라 <br> \
+      창밖에 밤비가 속살거리는데, <br> \
+      등불을 밝혀 어둠을 조금 내몰고 <br> \
+      시대처럼 올 아침을 기다리는 최후의 나."
+
+      if (count2 % 2 == 1) {
+        document.getElementById(id).style.backgroundColor = "aqua";
+        document.getElementById("text2").innerHTML = p2Title + p2;
+
+      } else {
+        document.getElementById(id).style.backgroundColor = "yellow";
+        document.getElementById("text2").innerHTML = "";
+      }
+    }
+
+    function poem3(id) {
+      count3 += 1;
+      p3Title = "<span style=\"font-weight: bolder; font-size: 15pt;\">별 헤는 밤, 윤동주 <br></span>"
+      p3 = "<br> 계절로 지나가는 하늘에는 <br> \
+      가을로 가득 차 있습니다. <br> \
+      나는 아무 걱정도 없이 <br> \
+      가을 속의 별들을 다 헤일 듯 합니다. <br> \
+      가슴속에 하나 둘 새겨지는 별을 <br> \
+      이제 다 못 헤는 것은 <br> \
+      쉬이 아침이 오는 까닭이요, <br> \
+      내일 밤이 남은 까닭이요, <br> \
+      아직 나의 청춘이 다 하지 않은 까닭입니다."
+
+      if (count3 % 2 == 1) {
+        document.getElementById(id).style.backgroundColor = "aqua";
+        document.getElementById("text3").innerHTML = p3Title + p3;
+
+      } else {
+        document.getElementById(id).style.backgroundColor = "yellow";
+        document.getElementById("text3").innerHTML = "";
+      }
+    }
+  </script>
+
+  <div type="button" onclick="poem1(id);" id="poem1">서시 <br> 윤동주 </div>
+  <div type="button" onclick="poem2(id);" id="poem2">쉽게 쓰여진 시 <br> 윤동주 </div>
+  <div type="button" onclick="poem3(id);" id="poem3">별 헤는 밤 <br> 윤동주 </div>
+  <p id="text1"></p>
+  <p id="text2"></p>
+  <p id="text3"></p>
+
+</body>
+
+</html>
