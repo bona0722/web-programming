@@ -38,7 +38,7 @@ select name, address, gender, phone from worker where address like '경기도%' 
 SELECT name, gender, id, phone, address from worker WHERE gender ='F' order by age desc;
 
 -- ⑤ 홍보부에 근무하는 남성 사원의 이름과 휴대전화 번호를 검색
-SELECT name, phone from worker WHERE gender ='M' and department='홍보부';
+SELECT name, phone from worker WHERE department='홍보부' and gender ='M';
 
 -- ⑥ 용인시에 사는 사원의 이름과 휴대전화 번호를 검색
 SELECT name, phone from worker WHERE address LIKE '%용인시';
@@ -53,4 +53,4 @@ update worker set age=33 where id='chulsu';
 delete from worker where id='jhjang';
 
 -- ⑩ 경리부에서 근무하는 '이세영'의 레코드를 삭제
-delete from worker where name='이세영' and department='경리부';
+delete from worker where department='경리부' and name='이세영';
